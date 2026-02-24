@@ -35,3 +35,16 @@ try:
 except ValueError:
     print("Erro: Digite um número inteiro válido para a quantidade.")
     return
+
+#dicionário
+
+produto = {
+    "codigo": codigo,
+    "nome": nome,
+    "preco": preco,
+    "quantidade": quantidade
+}
+
+estoque.append(produto)
+print("Produto cadastrado com sucesso!")
+
