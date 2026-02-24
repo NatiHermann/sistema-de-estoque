@@ -28,3 +28,10 @@ except ValueError:
 
 #validação de quantidade
 try:
+    quantidade = int(input("Digite a quantidade do produto: "))
+    if quantidade < 0:
+        print("Erro: A quantidade não pode ser negativa.")
+        return
+except ValueError:
+    print("Erro: Digite um número inteiro válido para a quantidade.")
+    return
