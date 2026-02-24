@@ -14,4 +14,17 @@ def cadastrar_produto():
             print("Erro: Já existe um produto com esse código.")
             return
     nome = input("Digite o nome do produto: ")
-        
+
+# Preço
+
+try:
+    preco = float(input("Digite o preço do produto: "))
+    if preco < 0:
+        print("Erro: o preço não pode ser negativo.")
+        return
+except ValueError:
+    print("Erro: Digite um valor numérico válido para o preço.")
+    return
+
+#validação de quantidade
+try:
