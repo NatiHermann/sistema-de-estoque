@@ -55,4 +55,24 @@ def calcularTotalProdutos():
     for produto in estoque:
         total+= produto["quantidade"]
     print(f"\nTotal de produtos em estoque: {total}")
+
+# Menu interativo
+def menu():
+    while True:
+        print("\n=== SISTEMA DE ESTOQUE ===")
+        print("1 - Cadastrar produto")
+        print("2 - Calcular total de produtos")
+        print("0 - Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            cadastrar_produto()
+        elif opcao == "2":
+            calcularTotalProdutos()
+        elif opcao == "0":
+            print("Encerrando o sistema...")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
     
