@@ -48,3 +48,11 @@ produto = {
 estoque.append(produto)
 print("Produto cadastrado com sucesso!")
 
+#Função pro estoque
+
+def calcularTotalProdutos():
+    total = 0
+    for produto in estoque:
+        total+= produto["quantidade"]
+    print(f"\nTotal de produtos em estoque: {total}")
+    
